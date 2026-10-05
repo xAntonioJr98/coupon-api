@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  coupon-api:
+    build: .
+    container_name: coupon-api-pleno
+    ports:
+      - "8080:8080"
+    environment:
+      - SPRING_PROFILES_ACTIVE=dev
